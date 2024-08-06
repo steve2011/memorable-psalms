@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Memorable Psalms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	/* resize the image(s) on page load */
+	$(document).ready(function() {
+		resize_all_parallax();
+	});
+
+	/* resize the image(s) on page resize */
+	$(window).on('resize', function(){
+		resize_all_parallax();
+	});
+
+	/* keep all of your resize function calls in one place so you don't have to edit them twice (on page load and resize) */
+	function resize_all_parallax() {
+		var div_id = 'img1'; /* the ID of the div that you're resizing */
+		var img_w = 1000; /* the width of your image, in pixels */
+		var img_h = 864; /* the height of your image, in pixels */
+		resize_parallax(div_id,img_w,img_h);
+	}
+
+	/* this resizes the parallax image down to an appropriate size for the viewport */
+	function resize_parallax(div_id,img_w,img_h) {
+		var div = $('#' + div_id);
+		var divwidth = div.width();
+		if (divwidth < 769) { var pct = (img_h/img_w) * 105; } /* show full image, plus a little padding, if on static mobile view */
+		else { var pct = 60; } /* this is the HEIGHT as percentage of the current div WIDTH. you can change it to show more (or less) of your image */
+		var newheight = Math.round(divwidth * (pct/100));
+		newheight = newheight  + 'px';
+		div.height(newheight);
+	}
+</script>
+   <style type="text/css">
+.parallax_img {
+    height: 500px;
+    background-image: url(bg1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img {
+		background-attachment: inherit;
+	}
+}
+
+       .parallax_img2 {
+    height: 500px;
+    background-image: url(bg4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img2 {
+		background-attachment: inherit;
+	}
+}
+       
+       .parallax_img3 {
+    height: 500px;
+    background-image: url(bg5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img3 {
+		background-attachment: inherit;
+	}
+}
+    
+       
+       
+        .parallax_img4 {
+    height: 500px;
+    background-image: url(bg6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img3 {
+		background-attachment: inherit;
+	}
+}
+       
+        .parallax_img5 {
+    height: 500px;
+    background-image: url(bg7.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img3 {
+		background-attachment: inherit;
+	}
+}
+   
+       
+   .parallax_img6 {
+    height: 500px;
+    background-image: url(bgc.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img3 {
+		background-attachment: inherit;
+	}
+}     
+       
+       
+    .parallax_img7 {
+    height: 500px;
+    background-image: url(bga.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img3 {
+		background-attachment: inherit;
+	}
+}    
+       
+       
+       
+       body {
+           background-color: #6c4f30;
+           
+       }     
+       
+       
+       .c1 {
+         background-color: #471E37; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c2 {
+         background-color: #69796b; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c3 {
+         background-color: #1575c5; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c4 {
+         background-color:darkolivegreen; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c5 {
+         background-color: #9624cd; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c6 {
+         background-color: #c2107c; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c7 {
+         background-color:blueviolet; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c8 {
+         background-color: #664d00; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c9 {
+         background-color: #660000; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c10 {
+         background-color: darkgoldenrod; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c11 {
+         background-color: blueviolet; 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c12 {
+         background-color1:dimgray; 
+           background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+  
+            
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+        .c13 {
+         background-color1: #471E37; 
+           background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); 
+
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       
+       .c14 {
+         background-color1: #471E37; 
+         background: linear-gradient(to bottom,  #3f4c6b 0%,#3f4c6b 100%);
+
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c15 {
+         background-color1: #471E37; 
+         background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c16 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c17 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  #49c0f0 0%,#2cafe3 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c18{
+         background-color1: #471E37;
+          background: linear-gradient(to bottom,  #a7cfdf 0%,#23538a 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c19 {
+         background-color1: #471E37;
+          background: linear-gradient(to bottom,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       
+       
+       .c20 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  #cb60b3 0%,#c146a1 50%,#a80077 51%,#db36a4 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       
+       .c20 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c21 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       
+       .c22 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       
+       
+       .c23 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c24 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       .c25 {
+         background-color1: #471E37; 
+        background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+         border-radius:20px;
+           margin-top: 20px;
+       }
+       
+       
+       
+       
+     
+
+
+       
+       
+       main {
+         width: 80%;
+           background-color1: #ecad60;
+           /*background: linear-gradient(to bottom,  rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); */
+           /*background: linear-gradient(to bottom,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); */
+           background: linear-gradient(to bottom,  rgba(249,198,103,1) 0%,rgba(247,150,33,1) 100%); 
+          margin-left:10%;
+           margin-right: 10%;
+           opacity: 0.8;
+           
+       }    
+       
+       
+       
+</style>
+
+</head>
+<body>
+<main>
+<br>
+<div style="border-radius: 20px" class="container p-5 bg-dark text-white text-center">
+  <h1>Psalm 1 New International Version</h1>
+  <p>Blessed is the one who does not walk in step with the wicked or stand in the way that sinners take or sit in the company of mockers,</p> 
+</div>
+  
+<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Verses 1-3</h3>
+      <p style="font-size: 2em;">
+    1 Blessed is the one
+        who does not walk in step with the wicked
+    or stand in the way that sinners take
+        or sit in the company of mockers,
+    2 but whose delight is in the law of the Lord,
+        and who meditates on his law day and night.
+    3 That person is like a tree planted by streams of water,
+        which yields its fruit in season
+    and whose leaf does not wither—
+        whatever they do prospers.
+
+   </p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>Verses 4-6</h3>
+      <p style="font-size: 2em;"> 
+       4 Not so the wicked!
+        They are like chaff
+        that the wind blows away.
+    5 Therefore the wicked will not stand in the judgment,
+        nor sinners in the assembly of the righteous.
+
+    6 For the Lord watches over the way of the righteous,
+        but the way of the wicked leads to destruction.</p>
+      
+    </div>
+  </div>
+</div>
+
+
+<div  style="border-radius: 20px;"  class="container p-5 bg-dark text-white text-center">
+  <h1 style= "font-family: cursive;">Psalm 8: Describes Yahweh as the King of creation who made dependent humans his royal partners.</h1>
+  <p>what is a human being that you are mindful of him, / a son of man that you care for him?</p> 
+</div>
+  
+<div  class="container mt-5"  style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Verses 1-4</h3>
+      <p style="font-size: 2em;">
+    Lord, our Lord,how majestic is your name in all the earth!
+    You have set your glory
+        in the heavens.
+    2 Through the praise of children and infants
+        you have established a stronghold against your enemies,
+        to silence the foe and the avenger.
+    3 When I consider your heavens,
+        the work of your fingers,
+    the moon and the stars,
+        which you have set in place,
+    4 what is mankind that you are mindful of them,
+        human beings that you care for them?</p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>Verses 6-9</h3>
+      <p style="font-size: 2em;">
+          5 You have made them[d] a little lower than the angels[e]
+        and crowned them[f] with glory and honor.
+    6 You made them rulers over the works of your hands;
+        you put everything under their[g] feet:
+    7 all flocks and herds,
+        and the animals of the wild,
+    8 the birds in the sky, and the fish in the sea, all that swim the paths of the seas.
+
+    9 Lord, our Lord, how majestic is your name in all the earth!</p>
+      
+    </div>
+    
+  </div>
+</div>
+
+<div  style="border-radius: 20px;"  class="container p-5 bg-dark text-white text-center">
+  <h1 style="text-align: center">Psalm 13: God's loving way of sustaining us in times of trouble and providing for our needs. </h1>
+  <p>Psalms teaches us to neither ignore our pain nor let it determine our lives. </p> 
+</div>
+  
+<div class="container mt-5"  style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Verses 1-3</h3>
+          <p style="font-size: 2em;">
+    1 How long, Lord? Will you forget me forever?
+        How long will you hide your face from me?
+    2 How long must I wrestle with my thoughts
+        and day after day have sorrow in my heart?
+        How long will my enemy triumph over me?
+    3 Look on me and answer, Lord my God.</p>
+    </div>
+    <div class="col-sm-6">
+      <h3>Verses 4-6</h3>
+      <p style="font-size: 2em;">
+                           Give light to my eyes, or I will sleep in death,
+            4 and my enemy will say, “I have overcome him,”
+                and my foes will rejoice when I fall.
+
+            5 But I trust in your unfailing love;
+                my heart rejoices in your salvation.
+            6 I will sing the Lord’s praise,
+                for he has been good to me.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div  style="border-radius: 20px;"  class="container p-5 bg-dark text-white text-center">
+  <h1>
+  Psalm 15: Live with Integrity  "Walk is blameless" "Don't accept a bribe"We start off the list and end the list with a call to walk with honesty and integrity before God and others. ..</h1>
+  <p>It encourages us to think about how we as individuals, families, and communities are invited to live in God's presence with joy and integrity. </p> 
+</div>
+  
+<div class="container mt-5"  style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Verses 1-5</h3>
+      <p style="font-size: 2em;">
+             A psalm of David.
+        1 Lord, who may dwell in your sacred tent?
+            Who may live on your holy mountain?
+        2 The one whose walk is blameless,
+            who does what is righteous,
+            who speaks the truth from their heart;
+        3 whose tongue utters no slander,
+            who does no wrong to a neighbor,
+            and casts no slur on others;
+        4 who despises a vile person
+            but honors those who fear the Lord;
+        who keeps an oath even when it hurts,
+            and does not change their mind;
+        5 who lends money to the poor without interest;
+            who does not accept a bribe against the innocent.
+        Whoever does these things
+            will never be shaken.
+      
+      </p>
+    </div><!-- col-sm-12 -->
+  </div><!-- ROW -->
+</div><!-- CONTAINER -->
+
+
+<!-- first parallax-->
+<div class="parallax_img" id="img3"></div>
+
+
+
+ <section>
+	<div class="container p-5 text-white text-center c1">
+  <h1>PSLAM 16: The Hope of the Faithful, and the Messiah’s Victory</h1>
+  <p style="font-size: 20px; font-weight: 700">Ask God to preserve your strength, preserve your joy, preserve your family, and preserve your</p> 
+ </div><!-- container -->
+  
+<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Verses 1-5</h3>
+             <p style="font-size: 2em;">
+              Preserve me, O God, for in You I put my trust.
+        2 O my soul, you have said to the Lord,
+        “You are my Lord,
+        My goodness is nothing apart from You.”
+        3 As for the saints who are on the earth,
+        “They are the excellent ones, in whom is all my delight.”
+
+        4 Their sorrows shall be multiplied who hasten after another god;
+        Their drink offerings of blood I will not offer,
+        Nor take up their names on my lips.
+
+        5 O Lord, You are the portion of my inheritance and my cup;
+        You [b]maintain my lot.
+        6 The lines have fallen to me in pleasant places;
+        Yes, I have a good inheritance.</p>
+     
+    </div><!-- col -->
+	<div class="col-sm-6">
+      <h3>VERSES 7-11</h3>
+              <p style="font-size: 2em;">
+              Yes, I have a good inheritance.
+        7 I will bless the Lord who has given me counsel;
+        My [c]heart also instructs me in the night seasons.
+        8 I have set the Lord always before me;
+        Because He is at my right hand I shall not be moved.
+
+        9 Therefore my heart is glad, and my glory rejoices;
+        My flesh also will [d]rest in hope.
+        10 For You will not leave my soul in [e]Sheol,
+        Nor will You allow Your Holy One to [f]see corruption.
+        11 You will show me the path of life;
+        In Your presence is fullness of joy;
+        At Your right hand are pleasures forevermore.</p>
+    </div><!-- col -->
+	</div><!-- rwo -->
+	</div><!--container-->
+	</section>
+	
+	
+	<section>
+	<div class="container p-5 c2 text-white text-center">
+  <h1>PSALM 27: God, you are mighty and strong, a solid rock, a safe hiding place. </h1>
+  <p style="font-size: 2em;">
+  This psalm invites us to believe again that our faith in God will
+   never desert us, no matter what happens.</p> 
+  </div><!-- container -->
+  
+<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-7</h3>
+                  <p style="font-size: 2em;">
+                  Of David.
+            1 The Lord is my light and my salvation—
+                whom shall I fear?
+            The Lord is the stronghold of my life—
+                of whom shall I be afraid?
+
+            2 When the wicked advance against me
+                to devour[a] me,
+            it is my enemies and my foes
+                who will stumble and fall.
+            3 Though an army besiege me,
+                my heart will not fear;
+            though war break out against me,
+                even then I will be confident.
+
+            4 One thing I ask from the Lord,
+                this only do I seek:
+            that I may dwell in the house of the Lord
+                all the days of my life,
+            to gaze on the beauty of the Lord
+                and to seek him in his temple.
+            5 For in the day of trouble
+                he will keep me safe in his dwelling;
+            he will hide me in the shelter of his sacred tent
+                and set me high upon a rock.
+
+            6 Then my head will be exalted
+                above the enemies who surround me;
+            at his sacred tent I will sacrifice with shouts of joy;
+             I will sing and make music to the Lord.
+            </p>
+            
+      
+    </div><!-- col -->
+	<div class="col-sm-6">
+      <h3>VERSES 8-14</h3>
+                  <p style="font-size: 2em;">
+                  7 Hear my voice when I call, Lord;
+                be merciful to me and answer me.
+            8 My heart says of you, “Seek his face!”
+                Your face, Lord, I will seek.
+            9 Do not hide your face from me,
+                do not turn your servant away in anger;
+                you have been my helper.
+            Do not reject me or forsake me,
+                God my Savior.
+            10 Though my father and mother forsake me,
+                the Lord will receive me.
+            11 Teach me your way, Lord;
+                lead me in a straight path
+                because of my oppressors.
+            12 Do not turn me over to the desire of my foes,
+                for false witnesses rise up against me,
+                spouting malicious accusations.
+
+            13 I remain confident of this:
+                I will see the goodness of the Lord
+                in the land of the living.
+            14 Wait for the Lord;
+                be strong and take heart
+                and wait for the Lord.
+                  </p>
+      
+    </div><!-- col -->
+	</div>
+	</div>
+	</section>
+	
+	
+	<!-- =============== Third paralax  ===================  -->
+<div class="parallax_img2" id="img3"></div>
+	
+	<!-- ############## -->
+	
+	
+	
+	<section>
+	<div class="container p-5 c3 text-white text-center">
+  <h1>PSALM 29: Praise to God in His Holiness and Majesty</h1>
+  <p style="font-size: 2em;">The Voice of the LORD in the Storm</p> 
+</div><!-- container -->
+  
+<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                  A Psalm of David.
+            29 Give[a] unto the Lord, O you mighty ones,
+            Give unto the Lord glory and strength.
+            2 [b]Give unto the Lord the glory [c]due to His name;
+            Worship the Lord in the [d]beauty of holiness.
+
+            3 The voice of the Lord is over the waters;
+            The God of glory thunders;
+            The Lord is over many waters.
+            4 The voice of the Lord is powerful;
+            The voice of the Lord is full of majesty.
+
+            5 The voice of the Lord breaks the cedars,
+            Yes, the Lord splinters the cedars of Lebanon.
+                  </p>
+
+    </div><!-- col -->
+	<div class="col-sm-6">
+      <h3>VERSES 6-11</h3>
+                  <p style="font-size: 2em;">
+                  Yes, the Lord splinters the cedars of Lebanon.
+            6 He makes them also skip like a calf,
+            Lebanon and Sirion like a young wild ox.
+            7 The voice of the Lord [e]divides the flames of fire.
+
+            8 The voice of the Lord shakes the wilderness;
+            The Lord shakes the Wilderness of Kadesh.
+            9 The voice of the Lord makes the deer give birth,
+            And strips the forests bare;
+            And in His temple everyone says, “Glory!”
+
+            10 The Lord sat enthroned at the Flood,
+            And the Lord sits as King forever.
+            11 The Lord will give strength to His people;
+            The Lord will bless His people with peace.
+                  </p>
+    </div><!-- col -->
+	</div><!-- ROW -->
+	</div><!--container-->
+	</section>
+	
+	
+	
+	<section>
+    <div class="container p-5 c4 text-white text-center">
+        <h1>PSALM 34: The Happiness of Those Who Trust in God</h1> 
+        <p style="font-size: 2em;">
+        A Psalm of David when he pretended madness before Abimelech, 
+        who drove him away, and he departed.</p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-10</h3>
+                  <p style="font-size: 2em;">
+                  I will bless the Lord at all times;
+            His praise shall continually be in my mouth.
+            2 My soul shall make its boast in the Lord;
+            The humble shall hear of it and be glad.
+            3 Oh, magnify the Lord with me,
+            And let us exalt His name together.
+
+            4 I sought the Lord, and He heard me,
+            And delivered me from all my fears.
+            5 They looked to Him and were radiant,
+            And their faces were not ashamed.
+            6 This poor man cried out, and the Lord heard him,
+            And saved him out of all his troubles.
+            7 The [a]angel of the Lord encamps all around those who fear Him,
+            And delivers them.
+
+            8 Oh, taste and see that the Lord is good;
+            Blessed is the man who trusts in Him!
+            9 Oh, fear the Lord, you His saints!
+            There is no [b]want to those who fear Him.
+            10 The young lions lack and suffer hunger;
+            But those who seek the Lord shall not lack any good thing.
+
+            11 Come, you children, listen to me;
+            I will teach you the fear of the Lord</p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 11-22</h3>        
+                  <p style="font-size: 2em;">
+                  I will teach you the fear of the Lord.
+            12 Who is the man who desires life,
+            And loves many days, that he may see good?
+            13 Keep your tongue from evil,
+            And your lips from speaking deceit.
+            14 Depart from evil and do good;
+            Seek peace and pursue it.
+
+            15 The eyes of the Lord are on the righteous,
+            And His ears are open to their cry.
+            16 The face of the Lord is against those who do evil,
+            To [c]cut off the remembrance of them from the earth.
+
+            17 The righteous cry out, and the Lord hears,
+            And delivers them out of all their troubles.
+            18 The Lord is near to those who have a broken heart,
+            And saves such as [d]have a contrite spirit.
+
+            19 Many are the afflictions of the righteous,
+            But the Lord delivers him out of them all.
+            20 He guards all his bones;
+            Not one of them is broken.
+            21 Evil shall slay the wicked,
+            And those who hate the righteous shall be [e]condemned.
+            22 The Lord redeems the soul of His servants,
+            And none of those who trust in Him shall be condemned.
+                  </p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+    <div class="container p-5 c5 text-white text-center">
+     <h1>PSALM 37: Trust in the Lord, and do good;
+Dwell in the land, and feed on His faithfulness.</h1> 
+     <p style="font-size: 2em;">
+     In contrast to anxiety, or rage, believers should trust in the Lord, delight themselves in the Lord, commit their way to the Lord, and wait patiently for the Lord
+     </p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+   <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                  A Psalm of David.
+             Do not fret because of evildoers,
+            Nor be envious of the workers of iniquity.
+            2 For they shall soon be cut down like the grass,
+            And wither as the green herb.
+
+            3 Trust in the Lord, and do good;
+            Dwell in the land, and feed on His faithfulness.
+            4 Delight yourself also in the Lord,
+            And He shall give you the desires of your heart.
+
+            5 Commit[a] your way to the Lord,
+            Trust also in Him,
+            And He shall bring it to pass.
+                   And He shall bring it to pass.
+            6 He shall bring forth your righteousness as the light,
+            And your justice as the noonday.
+
+                  </p>
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 6-11</h3>        
+                  <p style="font-size: 2em;">
+                  And He shall bring it to pass.
+            6 He shall bring forth your righteousness as the light,
+            And your justice as the noonday.
+
+            7 Rest in the Lord, and wait patiently for Him;
+            Do not fret because of him who prospers in his way,
+            Because of the man who brings wicked schemes to pass.
+            8 Cease from anger, and forsake wrath;
+            Do not fret—it only causes harm.
+
+            9 For evildoers shall be [b]cut off;
+            But those who wait on the Lord,
+            They shall inherit the earth.
+            10 For yet a little while and the wicked shall be no more;
+            Indeed, you will look carefully for his place,
+            But it shall be no more.
+            11 But the meek shall inherit the earth,
+            And shall delight themselves in the abundance of peace.
+                  </p>
+      
+    </div>
+    </div>
+    </div>
+</section>
+
+<section>
+<div class="container p-5 c6 text-white text-center">
+     <h1>PSALM 40: You are my help and my deliverer;. Do not delay, O my God.</h1> 
+     <p style="font-size: 20px; font-weight: 700; font-family: cursive;">But I am poor and needy; Yet the LORD thinks upon me. You are my help and my deliverer; Do not delay, O my God.</p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-8</h3>
+                  <p style="font-size: 2em;">
+                  To the Chief Musician. A Psalm of David.
+            40 I waited patiently for the Lord;
+            And He inclined to me,
+            And heard my cry.
+            2 He also brought me up out of a horrible pit,
+            Out of the miry clay,
+            And set my feet upon a rock,
+            And established my steps.
+            3 He has put a new song in my mouth—
+            Praise to our God;
+            Many will see it and fear,
+            And will trust in the Lord.
+
+            4 Blessed is that man who makes the Lord his trust,
+            And does not respect the proud, nor such as turn aside to lies.
+            5 Many, O Lord my God, are Your wonderful works
+            Which You have done;
+            And Your thoughts toward us
+            Cannot be recounted to You in order;
+            If I would declare and speak of them,
+            They are more than can be numbered.
+
+            6 Sacrifice and offering You did not desire;
+            My ears You have opened.
+            Burnt offering and sin offering You did not require.
+            7 Then I said, “Behold, I come;
+            In the scroll of the book it is written of me.
+            8 I delight to do Your will, O my God,
+            And Your law is within my heart.”
+                 9 I have proclaimed the good news of righteousness
+            In the great assembly;
+            Indeed, I do not restrain my lips,
+            O Lord, You Yourself know.
+                  </p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 9-17</h3>        
+                  <p style="font-size: 2em;">
+            10 I have not hidden Your righteousness within my heart;
+            I have declared Your faithfulness and Your salvation;
+            I have not concealed Your lovingkindness and Your truth
+            From the great assembly.
+
+            11 Do not withhold Your tender mercies from me, O Lord;
+            Let Your lovingkindness and Your truth continually preserve me.
+            12 For innumerable evils have surrounded me;
+            My iniquities have overtaken me, so that I am not able to look up;
+            They are more than the hairs of my head;
+            Therefore my heart fails me.
+
+            13 Be pleased, O Lord, to deliver me;
+            O Lord, make haste to help me!
+            14 Let them be ashamed and brought to mutual confusion
+            Who seek to destroy my [a]life;
+            Let them be driven backward and brought to dishonor
+            Who wish me evil.
+            15 Let them be confounded because of their shame,
+            Who say to me, “Aha, aha!”
+
+            16 Let all those who seek You rejoice and be glad in You;
+            Let such as love Your salvation say continually,
+            “The Lord be magnified!”
+            17 But I am poor and needy;
+            Yet the Lord thinks upon me.
+            You are my help and my deliverer;
+            Do not delay, O my God.
+                  </p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== second parallax ===================  -->
+<div class="parallax_img3" id="img2"></div>
+
+
+
+
+<section>
+<div class="container p-5 c7 text-white text-center">
+     <h1>PSALM 42: God of my life.</h1> 
+     <p style="font-size: 20px; font-weight: 700; font-family: cursive;">Put your hope in God, for I will yet praise him, my Savior and my God.</p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                  For the director of music. A maskil of the Sons of Korah.
+            1 As the deer pants for streams of water,
+                so my soul pants for you, my God.
+            2 My soul thirsts for God, for the living God.
+                When can I go and meet with God?
+            3 My tears have been my food
+                day and night,
+            while people say to me all day long,
+                “Where is your God?”
+            4 These things I remember
+                as I pour out my soul:
+            how I used to go to the house of God
+                under the protection of the Mighty One[d]
+            with shouts of joy and praise
+                among the festive throng.
+
+            5 Why, my soul, are you downcast?
+                Why so disturbed within me?
+            Put your hope in God,
+                for I will yet praise him,
+                my Savior and my God.
+                  </p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 6-11</h3>        
+                  <p style="font-size: 2em;"> 
+            6 My soul is downcast within me;
+                therefore I will remember you
+            from the land of the Jordan,
+                the heights of Hermon—from Mount Mizar.
+            7 Deep calls to deep
+                in the roar of your waterfalls;
+            all your waves and breakers
+                have swept over me.
+
+            8 By day the Lord directs his love,
+                at night his song is with me—
+                a prayer to the God of my life.
+
+            9 I say to God my Rock,
+                “Why have you forgotten me?
+            Why must I go about mourning,
+                oppressed by the enemy?”
+            10 My bones suffer mortal agony
+                as my foes taunt me,
+            saying to me all day long,
+                “Where is your God?”
+
+            11 Why, my soul, are you downcast?
+                Why so disturbed within me?
+            Put your hope in God,
+                for I will yet praise him,
+                my Savior and my God.
+                  </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container p-5 c8 text-white text-center">
+     <h1>PSALM 46: Emphasizes two main truths about God: His strength and His established presence.</h1> 
+     <p style="font-size: 20px; font-family: cursive; font-weight: 700;">In like manner, this “river” is metaphorical and represents the flow of God's peace and strength into their lives during times of heated tribulation all around. </p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                 o the Chief Musician. A Psalm of the sons of Korah. A Song for Alamoth.
+            46 God is our refuge and strength,
+            A[a] very present help in trouble.
+            2 Therefore we will not fear,
+            Even though the earth be removed,
+            And though the mountains be carried into the [b]midst of the sea;
+            3 Though its waters roar and be troubled,
+            Though the mountains shake with its swelling. Selah
+
+            4 There is a river whose streams shall make glad the city of God,
+            The holy place of the [c]tabernacle of the Most High.
+            5 God is in the midst of her, she shall not be [d]moved;
+            God shall help her, just [e]at the break of dawn.
+                  </p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 6-11</h3>        
+                  <p style="font-size: 2em;">
+                 God shall help her, just [e]at the break of dawn.
+            6 The nations raged, the kingdoms were moved;
+            He uttered His voice, the earth melted.
+
+            7 The Lord of hosts is with us;
+            The God of Jacob is our refuge. Selah
+
+            8 Come, behold the works of the Lord,
+            Who has made desolations in the earth.
+            9 He makes wars cease to the end of the earth;
+            He breaks the bow and cuts the spear in two;
+            He burns the chariot in the fire.
+
+            10 Be still, and know that I am God;
+            I will be exalted among the nations,
+            I will be exalted in the earth!
+
+            11 The Lord of hosts is with us;
+            The God of Jacob is our refuge. Selah
+                  </p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container p-5 c9 text-white text-center">
+     <h1>Psalm 51:Create in me a clean heart, O God, And renew a steadfast spirit within me. Do not cast me away from Your presence, And do not take Your Holy Spirit from me.</h1> 
+     <p style="font-size: 20px; font-family: cursive; font-weight: 700">Psalm 51 is a renowned expression of repentance. David, the greatest of Israel's kings, fell into serious sin and recognized his need to plead with God for forgiveness. This confession was inspired by David's sins of adultery, deception, and even murder in his relationship with Bathsheba.</p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6" >
+      <h3>VERSES 1-9</h3>
+                  <p style="font-size: 2em;">
+            51 Have mercy upon me, O God,
+            According to Your lovingkindness;
+            According to the multitude of Your tender mercies,
+            Blot out my transgressions.
+            2 Wash me thoroughly from my iniquity,
+            And cleanse me from my sin.
+
+            3 For I acknowledge my transgressions,
+            And my sin is always before me.
+            4 Against You, You only, have I sinned,
+            And done this evil in Your sight—
+            That You may be found just [a]when You speak,
+            And blameless when You judge.
+
+            5 Behold, I was brought forth in iniquity,
+            And in sin my mother conceived me.
+            6 Behold, You desire truth in the inward parts,
+            And in the hidden part You will make me to know wisdom.
+
+            7 Purge me with hyssop, and I shall be clean;
+            Wash me, and I shall be whiter than snow.
+            8 Make me hear joy and gladness,
+            That the bones You have broken may rejoice.
+            9 Hide Your face from my sins,
+            And blot out all my iniquities.
+                 10 Create in me a clean heart, O God,
+                And renew a steadfast spirit within me.
+                  </p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 10-19</h3>        
+                      <p style="font-size: 2em;">
+                
+                11 Do not cast me away from Your presence,
+                And do not take Your Holy Spirit from me.
+
+                12 Restore to me the joy of Your salvation,
+                And uphold me by Your generous Spirit.
+                13 Then I will teach transgressors Your ways,
+                And sinners shall be converted to You.
+
+                14 Deliver me from the guilt of bloodshed, O God,
+                The God of my salvation,
+                And my tongue shall sing aloud of Your righteousness.
+                15 O Lord, open my lips,
+                And my mouth shall show forth Your praise.
+                16 For You do not desire sacrifice, or else I would give it;
+                You do not delight in burnt offering.
+                17 The sacrifices of God are a broken spirit,
+                A broken and a contrite heart—
+                These, O God, You will not despise.
+
+                18 Do good in Your good pleasure to Zion;
+                Build the walls of Jerusalem.
+                19 Then You shall be pleased with the sacrifices of righteousness,
+                With burnt offering and whole burnt offering;
+                Then they shall offer bulls on Your altar.
+                      </p>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container p-5 c10 text-white text-center">
+     <h1> Psalm 57: A Prayer for Rescue from Persecutors .</h1> 
+     <p style="font-size: 20px; font-family: cursive; font-weight: 700;">Do Not Destroy.” A Michtam of David when he fled from Saul into the cave.</p>
+    </div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-5</h3>
+                      <p style="font-size: 2em;">
+                     Be merciful to me, O God, be merciful to me!
+                For my soul trusts in You;
+                And in the shadow of Your wings I will make my refuge,
+                Until these calamities have passed by.
+
+                2 I will cry out to God Most High,
+                To God who performs all things for me.
+                3 He shall send from heaven and save me;
+                He reproaches the one who [b]would swallow me up. Selah
+                God shall send forth His mercy and His truth.
+
+                4 My soul is among lions;
+                I lie among the sons of men
+                Who are set on fire,
+                Whose teeth are spears and arrows,
+                And their tongue a sharp sword.
+                5 Be exalted, O God, above the heavens;
+                Let Your glory be above all the earth.
+                      </p>
+
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 6-11</h3>        
+                      <p style="font-size: 2em;">
+                6 They have prepared a net for my steps;
+                My soul is bowed down;
+                They have dug a pit before me;
+                Into the midst of it they themselves have fallen. Selah
+
+                7 My heart is steadfast, O God, my heart is steadfast;
+                I will sing and give praise.
+                8 Awake, my glory!
+                Awake, lute and harp!
+                I will awaken the dawn.
+
+                9 I will praise You, O Lord, among the peoples;
+                I will sing to You among the [c]nations.
+                10 For Your mercy reaches unto the heavens,
+                And Your truth unto the clouds.
+
+                11 Be exalted, O God, above the heavens;
+                Let Your glory be above all the earth.
+                      </p>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- =============== second parallax ===================  -->
+<div class="parallax_img4" id="img2"></div>
+
+
+
+<section>
+<div class="container p-5 c11 text-white text-center">
+     <h1>PSALM 63: Joy in the Fellowship of God</h1> 
+     <p style="font-size: 25px; font-weight: 700; font-family: cursive;">O God, You are my God; Early will I seek You; My soul thirsts for You; </p>
+    </div>
+<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                  A Psalm of David when he was in the wilderness of Judah.
+            63 O God, You are my God;
+            Early will I seek You;
+            My soul thirsts for You;
+            My flesh longs for You
+            In a dry and thirsty land
+            Where there is no water.
+            2 So I have looked for You in the sanctuary,
+            To see Your power and Your glory.
+
+            3 Because Your lovingkindness is better than life,
+            My lips shall praise You.
+            4 Thus I will bless You while I live;
+            I will lift up my hands in Your name.
+            5 My soul shall be satisfied as with [a]marrow and [b]fatness,
+            And my mouth shall praise You with joyful lips.
+                  </p>
+
+    </div><!-- col-sm-6 -->
+    <div class="col-sm-6">
+      <h3>VERSES 6-11</h3>        
+                  <p style="font-size: 2em;">
+                  And my mouth shall praise You with joyful lips.
+            6 When I remember You on my bed,
+            I meditate on You in the night watches.
+            7 Because You have been my help,
+            Therefore in the shadow of Your wings I will rejoice.
+            8 My soul follows close behind You;
+            Your right hand upholds me.
+
+            9 But those who seek my life, to destroy it,
+            Shall go into the lower parts of the earth.
+            10 They shall [c]fall by the sword;
+            They shall be [d]a portion for jackals.
+
+            11 But the king shall rejoice in God;
+            Everyone who swears by Him shall glory;
+            But the mouth of those who speak lies shall be stopped.
+                  </p>
+
+    </div><!-- col-sm-6 -->
+  </div><!-- row -->
+</div><!-- container-->
+    </section>
+
+
+
+
+<section>
+<div class="container p-5  c12 text-white text-center">
+  <h2>PSALM 90: “Lord, teach us to make each day count, to reflect on the fact that we must die, and so become wise.”</h2>
+  <p style="font-size: 20px; font-weight: 700; font-family: cursive;">Ultimately Psalm 90 points us to the God who out of his “steadfast love” has done something for his people that reverses the judgment and enables us to live with an abiding, in fact an eternal, joy. </p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-8</h3>
+                     <p style="font-size: 2em;">
+                      A Prayer of Moses the man of God.
+                90 Lord, You have been our [a]dwelling place in all generations.
+                2 Before the mountains were brought forth,
+                Or ever You [b]had formed the earth and the world,
+                Even from everlasting to everlasting, You are God.
+
+                3 You turn man to destruction,
+                And say, “Return, O children of men.”
+                4 For a thousand years in Your sight
+                Are like yesterday when it is past,
+                And like a watch in the night.
+                5 You carry them away like a flood;
+                They are like a sleep.
+                In the morning they are like grass which grows up:
+                6 In the morning it flourishes and grows up;
+                In the evening it is cut down and withers.
+
+                7 For we have been consumed by Your anger,
+                And by Your wrath we are terrified.
+                8 You have set our iniquities before You,
+                Our secret sins in the light of Your countenance.
+                      </p>
+
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 9-17</h3>        
+                      <p style="font-size: 2em;">
+                9 For all our days have passed away in Your wrath;
+                We finish our years like a sigh.
+                10 The days of our lives are seventy years;
+                And if by reason of strength they are eighty years,
+                Yet their boast is only labor and sorrow;
+                For it is soon cut off, and we fly away.
+                11 Who knows the power of Your anger?
+                For as the fear of You, so is Your wrath.
+                12 So teach us to number our days,
+                That we may gain a heart of wisdom.
+
+                13 Return, O Lord!
+                How long?
+                And have compassion on Your servants.
+                14 Oh, satisfy us early with Your mercy,
+                That we may rejoice and be glad all our days!
+                15 Make us glad according to the days in which You have afflicted us,
+                The years in which we have seen evil.
+                16 Let Your work appear to Your servants,
+                And Your glory to their children.
+                17 And let the beauty of the Lord our God be upon us,
+                And establish the work of our hands for us;
+                Yes, establish the work of our hands.
+                      </p>
+    </div>
+   </div>
+   </div>
+</section>
+
+<section>
+<div class="container p-5 c13 text-white text-center">
+  <h1>PSALM 96: Psalms teaches us to neither ignore our pain nor let it determine our lives. </h1>
+  <p style="font-size: 20px; font-weight:700; font-family: cursive;">The psalms remind us to remember the God who is the beginning and end of all things, to rest in His sovereignty, and to have joy in all circumstances.</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-8</h3>
+      <p style="font-size: 2em;">
+
+                 Oh, sing to the Lord a new song!
+                Sing to the Lord, all the earth.
+                2 Sing to the Lord, bless His name;
+                Proclaim the good news of His salvation from day to day.
+                3 Declare His glory among the [a]nations,
+                His wonders among all peoples.
+
+                4 For the Lord is great and greatly to be praised;
+                He is to be feared above all gods.
+                5 For all the gods of the peoples are idols,
+                But the Lord made the heavens.
+                6 Honor and majesty are before Him;
+               Strength and beauty are in His sanctuary.
+               7 Give to the Lord, O families of the peoples,
+                Give to the Lord glory and strength.
+                8 Give to the Lord the glory due His name;
+                Bring an offering, and come into His courts.</p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 9-13</h3>        
+                      <p style="font-size: 2em;">
+
+                
+                9 Oh, worship the Lord in the beauty of holiness!
+                Tremble before Him, all the earth.
+
+                10 Say among the [d]nations, “The Lord reigns;
+                The world also is firmly established,
+                It shall not be [e]moved;
+                He shall judge the peoples righteously.”
+
+                11 Let the heavens rejoice, and let the earth be glad;
+                Let the sea roar, and [f]all its fullness;
+                12 Let the field be joyful, and all that is in it.
+                Then all the trees of the woods will rejoice
+                13     before the Lord.
+                For He is coming, for He is coming to judge the earth.
+                He shall judge the world with righteousness,
+                And the peoples with His truth.
+                      </p>
+     
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container p-5 c14 text-white text-center">
+  <h2>PSALM 98:  Make a joyful noise to the Lord, all the earth; break forth into joyous song and sing praises.</h2>
+  <p style="font-size: 25px; font-family: cursive; font-weight: 700;">Psalms teaches us to neither ignore our pain nor let it determine our lives. </p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>VERSES 1-9</h3>
+                  <p style="font-size: 2em;">
+                 Oh, sing to the Lord a new song!
+            For He has done marvelous things;
+            His right hand and His holy arm have gained Him the victory.
+            2 The Lord has made known His salvation;
+            His righteousness He has revealed in the sight of the [a]nations.
+            3 He has remembered His mercy and His faithfulness to the house of Israel;
+            All the ends of the earth have seen the salvation of our God.
+
+            4 Shout joyfully to the Lord, all the earth;
+            Break forth in song, rejoice, and sing praises.
+            5 Sing to the Lord with the harp,
+            With the harp and the sound of a psalm,
+            6 With trumpets and the sound of a horn;
+            Shout joyfully before the Lord, the King.
+
+            7 Let the sea roar, and all its fullness,
+            The world and those who dwell in it;
+            8 Let the rivers clap their hands;
+            Let the hills be joyful together
+            9     before the Lord,
+            For He is coming to judge the earth.
+            With righteousness He shall judge the world,
+            And the peoples with [b]equity.
+                  </p>
+
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+<!-- =============== second parallax ===================  -->
+<div class="parallax_img5" id="img2"></div>
+
+<section>
+<div class="container p-5 c15 text-white text-center">
+  <h1>PSALM 100: Enter His gates with thanksgiving, And His courtyards with praise.</h1>
+  <p style="font-size: 30px;">A Song of Praise for the Lord's Faithfulness to His People</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                   Make a a joyful shout to the LORD, 1 all you lands! 2 Serve the LORD with gladness;
+            Come before His presence with singing.
+
+            3 Know that the LORD, He is God;
+            b It is He who has made us, and 2 not we ourselves;
+            c We are His people and the sheep of His pasture.
+
+            4 d Enter into His gates with thanksgiving,
+            And into His courts with praise.
+            Be thankful to Him, and bless His name.
+
+            5 For the LORD is good;
+            e His mercy is everlasting,
+            And His truth endures to all generations.
+                  </p>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container p-5 c16 text-white text-center">
+  <h1>PSALM 111: It shows us how to praise God because God is worthy of praise, that is, simply because of who God is.</h1>
+  <p style="font-size: 20px; font-weight: 700; font-family: cursive;">The fear of the Lord is the beginning of wisdom: a good understanding have all they that do his commandments: his praise endureth for ever.</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>VERSES 1-10</h3>
+                  <p style="font-size: 2em;">
+                  111 Praise ye the Lord. I will praise the Lord with my whole heart, in the assembly of the upright, and in the congregation.
+
+            2 The works of the Lord are great, sought out of all them that have pleasure therein.
+
+            3 His work is honourable and glorious: and his righteousness endureth for ever.
+
+            4 He hath made his wonderful works to be remembered: the Lord is gracious and full of compassion.
+
+            5 He hath given meat unto them that fear him: he will ever be mindful of his covenant.
+
+            6 He hath shewed his people the power of his works, that he may give them the heritage of the heathen.
+
+            7 The works of his hands are verity and judgment; all his commandments are sure.
+
+            8 They stand fast for ever and ever, and are done in truth and uprightness.
+
+            9 He sent redemption unto his people: he hath commanded his covenant for ever: holy and reverend is his name.
+
+            10 The fear of the Lord is the beginning of wisdom: a good understanding have all they that do his commandments: his praise endureth for ever.
+                  </p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container p-5 c17 text-white text-center">
+  <h2>PSALM 139: The way of godliness is an everlasting way; it is everlastingly true and good, pleasing to God and profitable to us, and will end in everlasting </h2>
+  <p style="font-size: 25px;">That fact that God knows and cares for children in the womb means that God's concern for life begins at conception.</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-12</h3>
+                      <p style="font-size: 2em;">
+                       O lord, thou hast searched me, and known me.
+
+                2 Thou knowest my downsitting and mine uprising, thou understandest my thought afar off.
+
+                3 Thou compassest my path and my lying down, and art acquainted with all my ways.
+
+                4 For there is not a word in my tongue, but, lo, O Lord, thou knowest it altogether.
+
+                5 Thou hast beset me behind and before, and laid thine hand upon me.
+
+                6 Such knowledge is too wonderful for me; it is high, I cannot attain unto it.
+
+                7 Whither shall I go from thy spirit? or whither shall I flee from thy presence?
+
+                8 If I ascend up into heaven, thou art there: if I make my bed in hell, behold, thou art there.
+
+                9 If I take the wings of the morning, and dwell in the uttermost parts of the sea;
+
+                10 Even there shall thy hand lead me, and thy right hand shall hold me.
+
+                11 If I say, Surely the darkness shall cover me; even the night shall be light about me.
+
+                12 Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee.
+                      13 For thou hast possessed my reins: thou hast covered me in my mother's womb.
+
+            14 I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.
+                      </p>
+
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 13-24</h3>        
+                  <p style="font-size: 2em;">
+           
+
+            15 My substance was not hid from thee, when I was made in secret, and curiously wrought in the lowest parts of the earth.
+
+            16 Thine eyes did see my substance, yet being unperfect; and in thy book all my members were written, which in continuance were fashioned, when as yet there was none of them.
+
+            17 How precious also are thy thoughts unto me, O God! how great is the sum of them!
+
+            18 If I should count them, they are more in number than the sand: when I awake, I am still with thee.
+
+            19 Surely thou wilt slay the wicked, O God: depart from me therefore, ye bloody men.
+
+            20 For they speak against thee wickedly, and thine enemies take thy name in vain.
+
+            21 Do not I hate them, O Lord, that hate thee? and am not I grieved with those that rise up against thee?
+
+            22 I hate them with perfect hatred: I count them mine enemies.
+
+            23 Search me, O God, and know my heart: try me, and know my thoughts:
+
+            24 And see if there be any wicked way in me, and lead me in the way everlasting.
+
+                  </p>
+     
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container p-5 c18 text-white text-center">
+  <h1>PSALM 127: Laboring and Prospering with the Lord</h1>
+  <p style="font-size: 25px; font-family: cursive; font-weight: 700;"> asserts how futile it is to work for something without considering God's perspective and will. Whether it's building something, or protecting that which has been built, any approach that ignores the Lord is ultimately useless.</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>VERSES 1-5</h3>
+                  <p style="font-size: 2em;">
+                  A Song of Ascents. Of Solomon.
+            127 Unless the Lord builds the house,
+            They labor in vain who build it;
+            Unless the Lord guards the city,
+            The watchman stays awake in vain.
+            2 It is vain for you to rise up early,
+            To sit up late,
+            To eat the bread of sorrows;
+            For so He gives His beloved sleep.
+
+            3 Behold, children are a heritage from the Lord,
+            The fruit of the womb is a reward.
+            4 Like arrows in the hand of a warrior,
+            So are the children of one’s youth.
+            5 Happy is the man who has his quiver full of them;
+            They shall not be ashamed,
+            But shall speak with their enemies in the gate.
+                  </p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- =============== second parallax ===================  -->
+<div class="parallax_img6" id="img2"></div>
+
+<section>
+<div class="container p-5 c19 text-white text-center">
+  <h1>PSALM 121: God the Help of Those Who Seek Him</h1>
+  <p style="font-size: 25px; font-family: cursive; font-weight: 700;"> 
+  My help comes from the Lord, Who made heaven and earth.
+</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>VERSES 1-8</h3>
+                          <p style="font-size: 2em;">
+                          A Song of Ascents.
+                    121 I will lift up my eyes to the hills—
+                    From whence comes my help?
+                    2 My help comes from the Lord,
+                    Who made heaven and earth.
+
+                    3 He will not allow your foot to [a]be moved;
+                    He who keeps you will not slumber.
+                    4 Behold, He who keeps Israel
+                    Shall neither slumber nor sleep.
+
+                    5 The Lord is your [b]keeper;
+                    The Lord is your shade at your right hand.
+                    6 The sun shall not strike you by day,
+                    Nor the moon by night.
+
+                    7 The Lord shall [c]preserve you from all evil;
+                    He shall preserve your soul.
+                    8 The Lord shall preserve[d] your going out and your coming in
+                    From this time forth, and even forevermore.
+                          </p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container p-5 c20 text-white text-center">
+  <h1>PSALM 136: Thanksgiving to God for His Enduring Mercy</h1>
+  <p style="font-size:20px;">Thanksgiving to God for His Enduring Mercy - Oh, give thanks to the Lord, for He is good! For His mercy endures forever.</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-13</h3>
+                      <p style="font-size: 2em;">
+                      Thanksgiving to God for His Enduring Mercy
+                136 Oh, give thanks to the Lord, for He is good!
+                For His mercy endures forever.
+                2 Oh, give thanks to the God of gods!
+                For His mercy endures forever.
+                3 Oh, give thanks to the Lord of lords!
+                For His mercy endures forever:
+
+                4 To Him who alone does great wonders,
+                For His mercy endures forever;
+                5 To Him who by wisdom made the heavens,
+                For His mercy endures forever;
+                6 To Him who laid out the earth above the waters,
+                For His mercy endures forever;
+                7 To Him who made great lights,
+                For His mercy endures forever—
+                8 The sun to rule by day,
+                For His mercy endures forever;
+                9 The moon and stars to rule by night,
+                For His mercy endures forever.
+
+                10 To Him who struck Egypt in their firstborn,
+                For His mercy endures forever;
+                11 And brought out Israel from among them,
+                For His mercy endures forever;
+                12 With a strong hand, and with [a]an outstretched arm,
+                For His mercy endures forever;
+                13 To Him who divided the Red Sea in two,
+                For His mercy endures forever;.
+                      </p>
+
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 14-26</h3>        
+                  <p style="font-size: 2em">
+                  For His mercy endures forever;
+            14 And made Israel pass through the midst of it,
+            For His mercy endures forever;
+            15 But overthrew Pharaoh and his army in the Red Sea,
+            For His mercy endures forever;
+            16 To Him who led His people through the wilderness,
+            For His mercy endures forever;
+            17 To Him who struck down great kings,
+            For His mercy endures forever;
+            18 And slew famous kings,
+            For His mercy endures forever—
+            19 Sihon king of the Amorites,
+            For His mercy endures forever;
+            20 And Og king of Bashan,
+            For His mercy endures forever—
+            21 And gave their land as a [b]heritage,
+            For His mercy endures forever;
+            22 A heritage to Israel His servant,
+            For His mercy endures forever.
+
+            23 Who remembered us in our lowly state,
+            For His mercy endures forever;
+            24 And rescued us from our enemies,
+            For His mercy endures forever;
+            25 Who gives food to all flesh,
+            For His mercy endures forever.
+
+            26 Oh, give thanks to the God of heaven!
+            For His mercy endures forever.
+                  </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container p-5 c21 text-white text-center">
+  <h1>PSALM 140: Prayer for Deliverance from Evil Men</h1>
+  <p style="font-size: 20px; font-family: cursive; font-weight: 700;">The more danger appears, the more earnest we should be in prayer to God. All are safe whom the Lord protects. If he be for us, who can be against us?</p> 
+</div>
+	<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>VERSES 1-7</h3>
+                      <p style="font-size: 2em;">
+                       Deliver me, O Lord, from evil men;
+                Preserve me from violent men,
+                2 Who plan evil things in their hearts;
+                They continually gather together for war.
+                3 They sharpen their tongues like a serpent;
+                The poison of asps is under their lips. Selah
+
+                4 Keep me, O Lord, from the hands of the wicked;
+                Preserve me from violent men,
+                Who have purposed to make my steps stumble.
+                5 The proud have hidden a snare for me, and cords;
+                They have spread a net by the wayside;
+                They have set traps for me. Selah
+
+                6 I said to the Lord: “You are my God;
+                Hear the voice of my supplications, O Lord.
+                     7 O God the Lord, the strength of my salvation,
+            You have [a]covered my head in the day of battle.
+                      </p>
+    </div>
+    <div class="col-sm-6">
+      <h3>VERSES 8-13</h3>        
+                  <p style="font-size: 2em;">
+                
+            
+            8 Do not grant, O Lord, the desires of the wicked;
+            Do not further his wicked scheme,
+            Lest they be exalted. Selah
+
+            9 “As for the head of those who surround me,
+            Let the evil of their lips cover them;
+            10 Let burning coals fall upon them;
+            Let them be cast into the fire,
+            Into deep pits, that they rise not up again.
+            11 Let not a slanderer be established in the earth;
+            Let evil hunt the violent man to overthrow him.”
+
+            12 I know that the Lord will maintain
+            The cause of the afflicted,
+            And justice for the poor.
+            13 Surely the righteous shall give thanks to Your name;
+            The upright shall dwell in Your presence.
+                  </p>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- =============== second parallax ===================  -->
+<div class="parallax_img7" id="img2"></div>
+
+<section>
+<div class="container p-5 bg-dark text-white text-center" style="border-radius: 20px;">
+  <h1 style="text-align:center;">PSALM 91: A PSALM OF SPIRITUAL WARFARE AND DIVINE PROTECTION</h1>
+  <h3>Spiritual warfare power</h3> 
+</div>
+  
+<div class="container mt-5" style="background-color: #fff;: ">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Verses 1-5</h3>
+      <p style="font-size: 2em;">
+          1 Whoever dwells in the shelter of the Most High
+
+     will rest in the shadow of the Almighty. 
+
+    2 I will say of the Lord, "He is my refuge 
+
+    and my fortress, my God, in whom I trust."
+
+    3 Surely he will save you from the fowler's snare 
+
+    and from the deadly pestilence. 
+
+    4 He will cover you with his feathers, and under his wings 
+
+    you will find refuge; his faithfulness will be your shield and rampart. 
+
+    5 You will not fear the terror of night, nor the arrow that flies by day,</p>
+     
+    </div>
+    <div class="col-sm-4">
+      <h3>Verses 6-10</h3>
+       <p style="font-size: 2em;">
+           6 nor the pestilence that stalks in the darkness, 
+
+    nor the plague that destroys at midday. 
+
+    7 A thousand may fall at your side, 
+
+    ten thousand at your right hand, 
+
+    but it will not come near you. 
+
+    8 You will only observe with your eyes 
+
+    and see the punishment of the wicked.
+
+    9 If you say, "The Lord is my refuge," 
+
+    and you make the Most High your dwelling, 
+
+    10 no harm will overtake you, no disaster will come near your tent.
+    11 For he will command his angels concerning you
+
+    to guard you in all your ways; 
+    12 they will lift you up in their hands, so that you
+
+    will not strike your foot against a stone. 
+ </p>
+    </div>
+    
+        <div class="col-sm-4">
+          <h3>Verses 11-16</h3>        
+          <p style="font-size: 2em;">
+              
+        12 they will lift you up in their hands, so that you
+
+         will not strike your foot against a stone. 
+
+        13 You will tread on the lion and the cobra;
+
+         you will trample the great lion and the serpent.
+
+        14 "Because he loves me," says the Lord, 
+
+        "I will rescue him; I will protect him, for he acknowledges my name. 
+
+        15 He will call on me, and I will answer him; I will be with him in trouble, 
+
+        I will deliver him and honor him. 
+
+        16 With long life, I will satisfy him and show him my salvation."</p>
+
+        </div>
+    
+  </div>
+</div>
+
+<!-- End Psalms 91 -->
+<div class="parallax_img7"></div>
+
+
+<div class="container p-5 bg-dark text-white text-center" style="border-radius: 20px;">
+  <h2 style="text-align:justify;">Psalm 23 God Gave Us This Prayer To Use During Times Of Struggle And Despair.</h2>
+  <h3>God Is The Good Shepherd</h3> 
+</div>
+  
+<div class="container mt-5" style="background-color:#fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Verses 1-4</h3>
+                      <p style="font-size: 2em;">
+                      The Lord is my shepherd, I lack nothing.
+                2     He makes me lie down in green pastures,
+                he leads me beside quiet waters,
+                3     he refreshes my soul.
+                He guides me along the right paths
+                    for his name’s sake.
+                4 Even though I walk
+                    through the darkest valley,[a]
+                I will fear no evil,
+                    for you are with me;
+                your rod and your staff,
+                    they comfort me.</p>
+    </div>
+    
+    <div class="col-sm-6">
+      <h3>Verses 5-6</h3>        
+                  <p style="font-size: 2em;">
+            5 You prepare a table before me
+                in the presence of my enemies.
+            You anoint my head with oil;
+                my cup overflows.
+            6 Surely your goodness and love will follow me
+                all the days of my life,
+            and I will dwell in the house of the Lord
+                forever.
+                  </p>
+    </div>
+    </div>
+  </div>
+
+
+<div class="parallax_img3"></div>
+
+
+<section>
+<div class="container p-5 bg-dark text-white text-center" style="border-radius: 20px;">
+ <h5 style="text-align:justify;">Psalm 24 says, if you believe in God, it starts with believing that he made this world, that it belongs to him, and that he has a purpose for everything he made, and you live your life inside of his ownership, inside of his purpose</h5>
+  <h3>Psalm 24 – His Glory Redeems the Earth </h3> 
+</div>
+  
+<div class="container mt-5" style="background-color: #fff;">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>verses 1-5</h3>
+              <p style="font-size: 2em;">The earth is the Lord’s, and all its fullness,
+    The world and those who dwell therein.
+    2 For He has founded it upon the seas,
+    And established it upon the [a]waters.
+
+    3 Who may ascend into the hill of the Lord?
+    Or who may stand in His holy place?
+    4 He who has clean hands and a pure heart,
+    Who has not lifted up his soul to an idol,
+    Nor sworn deceitfully.
+    5 He shall receive blessing from the Lord,
+    And righteousness from the God of his salvation.
+         </p>
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>verses 6-10</h3>
+      <p style="font-size: 2em;">
+    6 This is Jacob, the generation of those who seek Him,
+    Who seek Your face. Selah
+    7 Lift up your heads, O you gates!
+    And be lifted up, you everlasting doors!
+    And the King of glory shall come in.
+    8 Who is this King of glory?
+    The Lord strong and mighty,
+    The Lord mighty in battle.
+    9 Lift up your heads, O you gates!
+    Lift up, you everlasting doors!
+    And the King of glory shall come in.
+    10 Who is this King of glory?
+    The Lord of hosts,
+    He is the King of glory. Selah
+      </p>
+     
+    </div>
+    
+  </div>
+</div>
+</section>
+    
+
+    <div class="parallax_img7" id="img1"></div>
+
+
+<br><br>
+
+<!-- Copyright -->
+   <footer>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.8)">
+         
+        <b style="color: #fff;"> &copy; 2024 Copyright:</b>
+      <p class="text-white">Design by Evangelist Stephen Jolayemi</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</main>
+</body>
+</html>
